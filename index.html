@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro al Realm de Minecraft</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    .form-container {
+      background-color: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .phone-group {
+      display: flex;
+      justify-content: space-between;
+    }
+    .phone-group input {
+      width: 48%;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Registro al Realm de Minecraft</h2>
+    <form action="#" method="post">
+      <label for="gamertag">Gamertag:</label>
+      <input type="text" id="gamertag" name="gamertag" required>
+
+      <label for="nombre">Nombre o Alias:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="1" required>
+
+      <label>Número de celular (parcial):</label>
+      <div class="phone-group">
+        <input type="text" name="telefono_inicio" placeholder="Primeros 3 dígitos" maxlength="3" required>
+        <input type="text" name="telefono_fin" placeholder="Últimos 3 dígitos" maxlength="3" required>
+      </div>
+
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+</body>
+        </html>
